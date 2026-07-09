@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ControladorInicio {
 
-	@GetMapping("/")
+	@GetMapping("/saludo")
 	public String mostrarPagina() {
 	    return "<h1>holiii xd.</h1>";
 	}
