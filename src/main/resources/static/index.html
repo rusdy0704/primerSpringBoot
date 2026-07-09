@@ -66,22 +66,23 @@
 
     <!-- Aquí empieza el HTML (Estructura) -->
     <div class="tarjeta">
-        <h1>¡Hola, Frontend! 🚀</h1>
-        <p>Esta página ya no es controlada directamente por Java, sino por HTML y CSS.</p>
+        <h1>Hola Daniel</h1>
+        <p>Toca el boton para ganar un iphone Gratis</p>
         
         <!-- Cuando hagan clic, llamamos a la función de JavaScript -->
-        <button onclick="mostrarMagia()">Haz clic para ver magia</button>
+        <button onclick="mostrarMagia()">Tocalo sin miedo</button>
         
         <div id="mensaje-secreto"></div>
     </div>
 
     <!-- Aquí empieza el JavaScript (Interactividad) -->
-    <script>
-        function mostrarMagia() {
-            // Buscamos el div vacío y le metemos texto nuevo
-            document.getElementById("mensaje-secreto").innerText = "¡Felicidades! Has programado tu primer botón. 🎉";
-        }
-    </script>
+	<script>
+	        function mostrarMagia() {
+	            // Esto le dice al navegador que cambie de URL, 
+	            // llevándote físicamente a la ruta "/saludo"
+	            window.location.href = '/saludo';
+	        }
+	    </script>
 
 </body>
 </html>
