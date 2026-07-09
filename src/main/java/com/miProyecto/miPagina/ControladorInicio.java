@@ -13,6 +13,6 @@ public class ControladorInicio {
 
 	@GetMapping("/")
 	public String mostrarPagina() {
-	    return "<h1>hola Dayerlin xd.</h1>";
+	    return "<h1>holiii xd.</h1>";
 	}
 }
