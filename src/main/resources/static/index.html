@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página Visual</title>
+    
+    <!-- Aquí empieza el CSS (Estilos) -->
+    <style>
+        /* Le damos color de fondo a toda la página y centramos el contenido */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Creamos una tarjeta blanca con sombras */
+        .tarjeta {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px; /* Bordes redondeados  */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Sombra elegante */
+            text-align: center;
+            max-width: 400px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+
+        /* Estilo del botón */
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Animación suave */
+        }
+
+        /* Cambiar color al pasar el mouse por encima del botón */
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        #mensaje-secreto {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Aquí empieza el HTML (Estructura) -->
+    <div class="tarjeta">
+        <h1>¡Hola, Frontend! 🚀</h1>
+        <p>Esta página ya no es controlada directamente por Java, sino por HTML y CSS.</p>
+        
+        <!-- Cuando hagan clic, llamamos a la función de JavaScript -->
+        <button onclick="mostrarMagia()">Haz clic para ver magia</button>
+        
+        <div id="mensaje-secreto"></div>
+    </div>
+
+    <!-- Aquí empieza el JavaScript (Interactividad) -->
+    <script>
+        function mostrarMagia() {
+            // Buscamos el div vacío y le metemos texto nuevo
+            document.getElementById("mensaje-secreto").innerText = "¡Felicidades! Has programado tu primer botón. 🎉";
+        }
+    </script>
+
+</body>
+</html>
